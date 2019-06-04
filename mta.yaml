@@ -17,6 +17,9 @@ modules:
     requires:
       - name: db
       - name: hdi_db
+
+  
+
 resources:
   - name: hdi_db
     properties:
@@ -26,3 +29,9 @@ resources:
     properties:
       hdi-container-name_2: '${service-name}'
     type: com.sap.xs.hdi-container
+
+  - name: hdi_db2
+    properties:
+       hdi-container-name_3: ${service-name}
+    type: com.sap.xs.hdi-container
+
